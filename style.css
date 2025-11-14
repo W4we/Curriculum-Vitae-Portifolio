@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #101630;
+    color: #fff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(16, 22, 48, 0.8), rgba(16, 22, 48, 0.8));
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(16, 22, 48, 0.95);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    color: #49BADA;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li a {
+    font-size: 16px;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.menu .navbar ul li a:hover {
+    color: #49BADA;
+    transform: translateY(-3px);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    display: none;
+    filter: invert(1);
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.header-txt {
+    max-width: 800px;
+}
+
+.header-txt span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #868B9E;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.header-txt h1 {
+    font-size: 5rem;
+    color: #FFFFFF;
+    line-height: 1.1;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px 0 20px 0;
+}
+
+.header-txt p {
+    font-size: 1.2rem;
+    color: #B3B3B3;
+    margin-bottom: 30px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, rgba(78,159,215,1) 0%, rgba(74,42,193,1) 100%);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: 5px solid #49BADA;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-txt {
+    flex: 1;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+
+.about-txt p {
+    color: #B3B3B3;
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.butons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.portfolio-content {
+    margin-top: 70px;
+}
+
+.portfolio-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
+.portfolio-txt {
+    flex: 1;
+    text-align: left;
+}
+
+.portfolio-txt span {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #49BADA;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.portfolio-txt h3 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.portfolio-txt p {
+    font-size: 18px;
+    color: #C5C5C5;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.portfolio-img {
+    flex: 1;
+    text-align: center;
+}
+
+.portfolio-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.portfolio-img img:hover {
+    transform: scale(1.03);
+}
+
+/* Skills Section */
+.skills {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skills-content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-item span {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #B3B3B3;
+}
+
+.contact-info {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #49BADA;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #49BADA;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    padding: 70px 0 30px;
+    background: linear-gradient(90deg, rgba(74,42,193,1) 0%, rgba(78,159,215,1) 100%);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.link h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link a {
+    color: rgba(255, 255, 255, 0.8);
